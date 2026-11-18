@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Introductory Video - Motaz CV</title>
+		<link rel="stylesheet" href="Style2.css">
+	</head>
+	<body>
+
+		<header>
+			<h1>Introductory Video & Audio</h1>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="MyOwnCV.html">Home</a></li>
+				<li><a href="Video.html">Introductory Video</a></li>
+				<li><a href="Summary.html">Summary</a></li>
+				<li><a href="Education.html">Education</a></li>
+				<li><a href="Certification.html">Certificates</a></li>
+				<li><a href="Projects.html">Projects</a></li>
+			</ul>
+		</nav>
+		<section align="Center">
+			<h2>CV Video</h2>
+			<video id="Video" width="60%" height="60%">
+				<source src="CV Video.mp4" type="video/mp4">
+			</video>
+			<br><br>
+			<button type="button" onclick="PlayVideo()" 
+			class="PlayButton">Play ▶️</button>
+			<button type="button" onclick="PauseVideo()" 
+			class="PauseButton">Pause ⏸️</button>
+			<br>
+		</section>
+		<section align="Center">
+			<h2>CV Audio</h2>
+			<audio id="Audio" controls>
+				<source src="Motaz' CV Recording.mp3" type="audio/mp3">
+			</audio>
+			<br><br>
+			<button type="button" onclick="PlayAudio()" 
+			class="PlayButton">Play ▶️</button>
+			<button type="button" onclick="PauseAudio()" 
+			class="PauseButton">Pause ⏸️</button>
+			<br>
+		</section>
+		<footer>
+			<p>
+				Motaz Mohammad Kamal Husain<br>
+				Email: <a href="mailto:motazhusain511@gmail.com">motazhusain511@gmail.com</a><br>
+				Phone: 0790958568<br>
+				Company: BeProgrammer<br>
+				ID:1204669
+			</p>
+		</footer>
+		<script>
+			var video=document.getElementById("Video");
+			var audio=document.getElementById("Audio");
+			
+			//functions for CV video:
+			function PlayVideo()
+			{
+				video.play();
+			}//end function
+			
+			function PauseVideo()
+			{
+				video.pause();
+			}//end function
+		
+			//functions for Cv Audio:
+			function PlayAudio()
+			{
+				audio.play();
+			}//end function
+			
+			function PauseAudio()
+			{
+				audio.pause();
+			}//end function
+		</script>
+	</body>
+</html>
